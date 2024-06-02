@@ -1,0 +1,75 @@
+body {
+  background-color: black;
+}
+.sign-in-wraper {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: linear-gradient(rgb(0, 0, 0, 0.3), rgb(0, 0, 0, 0.3)),
+    url(../Img/pic.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0;
+  animation: fadding 1s ease-in-out forwards;
+}
+
+.sign-in-box {
+  position: relative;
+  width: 50%;
+  height: 75%;
+  background-color: white;
+  border-radius: 25px;
+  animation: slideing 0.8s ease-in-out forwards;
+  position: relative;
+}
+
+.sign-in-box .img {
+  background-image: url(../Img/pic.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  z-index: 100;
+}
+
+@keyframes fadding {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes slideing {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+.password-input {
+  border-radius: 25px;
+}
+input {
+  outline: none;
+  border: none;
+  border-radius: 25px;
+  padding: 5px 10px;
+  animation: slideing 1s ease-in-out forwards;
+}
+input::placeholder {
+  color: rgb(13, 202, 240);
+}
+.visibile-btn {
+  background-color: transparent;
+  border: none;
+  right: 10px;
+  visibility: hidden;
+}
+.warning-box,
+.password-feedBack,
+.email-feedBack {
+  visibility: hidden;
+}

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <!-- Bootstrap Css-->
+  <link rel="stylesheet" href="./Css/bootstrap.min.css">
+  <!-- FontAwesome -->
+  <link rel="stylesheet" href="./Css/all.min.css">
+  <!-- Css -->
+  <link rel="stylesheet" href="./Css/style.css">
+
+</head>
+
+<body class="position-relative">
+
+  <div class="sign-in-wraper">
+    <div class="sign-in-box overflow-hidden row position-absolute">
+      <div class="col-5 img"></div>
+      <div class="form ms-4 w-50 d-flex flex-column justify-content-center align-items-start">
+        <div class="title text-center w-100 pb-4">
+          <h2 class="fw-semibold">Login</h2>
+        </div>
+        <div class="email-box d-flex flex-column gap-2 w-100">
+          <label for="userEmail" class="ps-1 fw-semibold text-secondary">Enter Your Email</label>
+          <input type="text" class="form-control" placeholder="Email" id="userEmail">
+          <div class="email-feedBack mt-1 w-100 ps-3" id="emailFeed">
+          </div>
+        </div>
+
+        <div class="password-box my-2 d-flex flex-column gap-2 w-100 my-3">
+          <label for="userPassword" class="ps-1 fw-semibold text-secondary">Enter Your Password</label>
+          <div class="password-input d-flex flex-column align-items-center position-relative">
+            <input class="w-100 form-control" type="password" placeholder="Password" id="userPassword">
+            <button id="visibileBtn" class="visibile-btn position-absolute text-info mt-1"><i
+                class="fa-regular fa-eye"></i></button>
+            <div class="password-feedBack mt-1 w-100 ps-3" id="passwordFeed">
+
+            </div>
+          </div>
+          <!-- <i class=" fa-regular fa-eye"></i> -->
+          <!-- <i class="fa-regular fa-eye-slash"></i> -->
+        </div>
+        <div class="warning-box text-center w-100 ps-3 mt-2" id="warningBox">
+        </div>
+        <button id="singInBtn" class="btn btn-outline-info">Sign-In</button>
+
+        <p class="mt-5">
+          <span>Don't Have an account ?</span>
+          <a href="./singUp/singUp.html" class="link-info text-decoration-none fw-bolder">Sign-up</a>
+        </p>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Bootstrap JS -->
+  <script src="./Js/bootstrap.bundle.min.js"></script>
+  <!-- Main Js -->
+  <script src="./Js/main.js"></script>
+</body>
+
+</html>

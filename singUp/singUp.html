@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <!-- Bootstrap Css-->
+  <link rel="stylesheet" href="../Css/bootstrap.min.css">
+  <!-- FontAwesome -->
+  <link rel="stylesheet" href="../Css/all.min.css">
+  <!-- Css -->
+  <link rel="stylesheet" href="../Css/style.css">
+
+</head>
+
+<body>
+
+  <div class="sign-in-wraper">
+    <div class="sign-in-box overflow-hidden row position-absolute">
+      <div class="col-5 img"></div>
+      <div class="form ms-4 w-50 d-flex flex-column justify-content-center align-items-start">
+        <div class="title text-center w-100 pb-4  pt-3">
+          <h2 class="fw-semibold">Sign-up</h2>
+        </div>
+
+        <div class="name-box mb-1 d-flex flex-column gap-2 w-100">
+          <label for="userEmail" class="ps-1 fw-semibold text-secondary">Enter Your Name</label>
+          <input type="text" id="userName" class="form-control" placeholder="Name">
+        </div>
+
+        <div class="email-box d-flex my-2 flex-column gap-2 w-100">
+          <label for="userEmail" class="ps-1 fw-semibold text-secondary">Enter Your Email</label>
+          <input type="text" id="userEmail" class="form-control" placeholder="example@any.com">
+
+          <div class="email-feedBack mt-1 w-100 ps-3" id="emailFeed">
+          </div>
+        </div>
+
+        <div class="password-box d-flex flex-column gap-2 w-100">
+          <label for="userPassword" class="ps-1 fw-semibold text-secondary">Enter Your Password</label>
+          <div class="password-input d-flex flex-column align-items-center position-relative">
+            <input type="password" id="userPassword" class="form-control" placeholder="Enter a Strong Password">
+            <button id="visibileBtn" class="visibile-btn position-absolute text-info mt-1"><i
+                class="fa-regular fa-eye"></i></button>
+            <div class="password-feedBack mt-1 w-100 ps-3" id="passwordFeed">
+            </div>
+          </div>
+          <!-- <i class=" fa-regular fa-eye"></i> -->
+          <!-- <i class="fa-regular fa-eye-slash"></i> -->
+        </div>
+
+        <div class="warning-box text-center w-100 ps-3 mt-2" id="warningBox">
+        </div>
+        <button id="signUpBtn" class="btn btn-outline-info mt-2">Sign-Up</button>
+
+        <p class="mt-3 ">
+          <span>You Already Have Account ?</span>
+          <a href="../index.html" class="link-info text-decoration-none fw-bolder">Login</a>
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bootstrap JS -->
+  <script src="../Js/bootstrap.bundle.min.js"></script>
+  <!-- singUp Js -->
+  <script src="./singUp.js"></script>
+</body>
+
+</html>
