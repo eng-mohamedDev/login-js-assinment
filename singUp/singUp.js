@@ -84,7 +84,7 @@ signUpBtn.addEventListener("click", () => {
       // #Save User Data in the localStorage;
       localStorage.setItem("usersInfo", JSON.stringify(users));
       localStorage.setItem("currentUserName", JSON.stringify(userInfo.name));
-      window.location.href = "../home/homePage.html";
+      window.location.assign("../home/homePage.html");
     }
   } else {
     users.forEach((ele) => {
@@ -108,7 +108,7 @@ signUpBtn.addEventListener("click", () => {
             "currentUserName",
             JSON.stringify(userInfo.name)
           );
-          window.location.href = "../home/homePage.html";
+          window.location.assign("../home/homePage.html");
         }
       }
     });
